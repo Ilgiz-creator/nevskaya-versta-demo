@@ -9,3 +9,19 @@
 
 /* Callback demo — visual states; delivery configured separately. */
 .callback .field-optional{display:inline;color:inherit;opacity:.7;font-size:12px;margin-top:-5px}.callback .action{width:100%;border:0;justify-content:center}.callback input,.callback textarea{font-size:16px}.callback-result{padding:12px 0;min-height:260px}.callback-result h4{font:2.4rem Georgia,serif;margin:18px 0 12px}.callback-result p{font-size:16px;line-height:1.6}.callback-check{display:grid;width:54px;height:54px;place-items:center;border:1px solid currentColor;border-radius:50%;font-size:26px}.callback-phone-label{font-size:13px!important;margin-bottom:6px}.callback-number{display:block;font-size:20px;overflow-wrap:anywhere}.callback-edit{display:block;margin-top:25px;padding:12px 0;background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer}.callback [hidden]{display:none}
+
+/* Restrained motion: transform/opacity only; no scroll handlers or hidden resting states. */
+.button,.mini,.inquiry .action,.callback-edit{transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}
+.button:active,.mini:active,.inquiry .action:active{transform:translateY(1px)}
+.motion-arrow{display:inline-block;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+@media(hover:hover) and (pointer:fine){
+  .button:hover,.mini:hover,.inquiry .action:hover{transform:translateY(-2px);box-shadow:0 5px 12px #00000012}
+  a:hover .motion-arrow,a:focus-visible .motion-arrow{transform:translate(3px,-3px)}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .motion-arrow{transform:none!important}
+}
+
+.hero-art{overflow:hidden}.hero-art img{transition:transform 1.2s cubic-bezier(.22,1,.36,1)}.hero-bottom{position:relative}.hero-bottom::before{content:'';position:absolute;top:-1px;left:0;width:100%;height:1px;background:#afc5d0;transform-origin:left}.hero-bottom.motion-seen::before{animation:neva-horizon 1.2s cubic-bezier(.22,1,.36,1) both}.toggle::after{transition:transform .3s ease}details[open] .detail-body{animation:neva-detail .4s ease both}@keyframes neva-horizon{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes neva-detail{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}@media(hover:hover) and (pointer:fine){.hero-art:hover img{transform:scale(1.025)}summary:hover .item-number{color:#f2ac9c}}@media(prefers-reduced-motion:reduce){.hero-art:hover img{transform:none}}
