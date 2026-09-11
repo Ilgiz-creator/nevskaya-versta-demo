@@ -20,6 +20,8 @@ document.querySelectorAll('.inquiry').forEach(root => {
     lines.push(root.dataset.question || 'Подскажите, пожалуйста, доступность, меню и условия.');
     const message = lines.join('\n');
     root.querySelector('.inquiry-message').textContent = message;
+    const copyButton = root.querySelector('.inquiry-copy');
+    if (copyButton) copyButton.textContent = 'Скопировать детали';
     const send = root.querySelector('.inquiry-send');
     if (root.dataset.whatsapp) send.href = `https://wa.me/${root.dataset.whatsapp}?text=${encodeURIComponent(message)}`;
     form.hidden = true;
