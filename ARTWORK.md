@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: Landscape website hero illustration, approximately 1536x1024, for a private concept for Russian restaurant “Невская Верста” inspired by the Neva river. Original art; not a photograph or depiction of the actual restaurant.
+Primary request: Create exactly one sophisticated editorial painterly illustration. In the foreground on the right, an ivory linen tablecloth, a single elegant wine glass with deep burgundy wine, a silver fork and a simple empty cream plate. Behind it, a broad indigo river at twilight with tiny abstract warm distant city lights.
+Style/medium: Restrained premium European restaurant editorial art, hand-painted oil and gouache brush texture, confident artistic simplified shapes, high contrast, atmospheric and quiet.
+Composition/framing: Landscape, still life concentrated in right half and lower-right foreground; broad cobalt and ink-blue negative space across left for white website title overlay, no text actually drawn in image. River and horizon stretch behind foreground objects.
+Color palette: Atmospheric cobalt and ink blue, ivory cream, deep burgundy, sparse tiny warm amber highlights.
+Constraints: No text, no logos, no watermarks, no people, no food offerings, no identifiable landmarks, no invented venue interior, no extra decorative objects. This is original conceptual river and dining still-life art. Generate one image only, no variants.
